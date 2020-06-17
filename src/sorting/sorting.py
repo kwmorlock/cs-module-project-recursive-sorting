@@ -2,8 +2,20 @@
 def merge(arrA, arrB):
     elements = len(arrA) + len(arrB)
     merged_arr = [0] * elements
+    #puts back together here
+    #sorting happe ns here
 
     # Your code here
+    a = 0
+    b = 0
+    k = 0
+
+    for k in range(0, elements):
+        #comparing a to b
+        #if a is bigger put it in array and iterate both
+        #if b is bigger put it in array and iterate both
+        #if a is out of range, push b and iterate
+        #if b is out of range, push a and iterate
 
 
     return merged_arr
