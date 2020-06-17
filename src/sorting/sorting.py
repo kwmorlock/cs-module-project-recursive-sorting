@@ -8,7 +8,7 @@ def merge(arrA, arrB):
     # Your code here
     a = 0
     b = 0
-    k = 0
+    # k = 0
 
     for k in range(0, elements):
         #comparing a to b
@@ -16,10 +16,20 @@ def merge(arrA, arrB):
         #if b is bigger put it in array and iterate both
         #if a is out of range, push b and iterate
         #if b is out of range, push a and iterate
-
+        if a >= len(arrA):
+            merged_arr[k] = arrB[b]
+            b += 1
+        elif b >= len(arrB):
+            merged_arr[k] = arrA[a]
+            a += 1
+        elif arrA[a] < [b]:
+            merged_arr[k] = arrA[a]
+            a += 1
+        else:
+            merged_arr[k] = arrB[b]
+            b += 1
 
     return merged_arr
-
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
     # Your code here
